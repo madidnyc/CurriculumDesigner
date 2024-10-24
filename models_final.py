@@ -14,7 +14,7 @@ class CurriculumComponent(BaseModel):
     component_type: CurriculumComponentType
     difficulty_level: str
     estimated_time: int  # in minutes
-    prerequisites: List[str] = []
+    prerequisites: Optional[List[str]] = None
 
 class EvaluationScore(BaseModel):
     reasoning: str
